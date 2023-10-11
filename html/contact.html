@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartments Cinkopan</title>
+    <link rel="stylesheet" href="../css/contact.css">
+    <script src="../script/nav.js" defer></script>
+
+    <!--Google font:-->    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body> 
+    <header>
+        <nav class="navbar">
+            <div class="nav-content">
+                <h1 id="logo">APARTMENTS CINKOPAN</h1>
+                
+                <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                
+                <div class="navbar-links">
+                    <ul class="nav-menu">
+                        <li><a href="arena.html" class="nav-links">HOME</a></li>
+                        <!--<li><a href="contact.html" class="nav-links">CONTACT</a></li>-->
+                        <li id="app"><a href="#" class="nav-links">APARTMENTS</a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li><a href="arena.html">ARENA</a></li>
+                                    <li><a href="premantura.html">PREMANTURA</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!--<li><a href="premantura.html" class="nav-links">LANGUAGE</a></li>-->
+                        <li><a href="reserve.html" class="nav-links">RESERVE</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+        <nav id="mobile-nav">
+            <div class="mobile-links">
+                <ul class="nav-menu">
+                    <li><a href="arena.html" class="nav-links">HOME</a></li>
+                    <li><a href="arena.html">ARENA</a></li>
+                    <li><a href="premantura.html">PREMANTURA</a></li>
+                    <li><a href="contact.html" class="nav-links">CONTACT</a></li>
+                    <li><a href="reserve.html" class="nav-links">RESERVE</a></li>
+                </ul>
+            </div>
+        </nav>
+    <main>
+        <div class="form-container">
+            <form action="https://formsubmit.co/apartmani.cinkopan@gmail.com" method="POST">
+                <p id="contact-us">CONTACT US<p>
+                <input type="hidden" name="_subject" value="Upit za apartman Premantura">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="box">
+                <input type="hidden" name="_next" value="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                
+                <input type="text" name="name" placeholder="First and last name" required class="input-box">
+                <input type="email" name="email" placeholder="Your e-mail" required class="input-box">
+                <input type="number" name="adults" placeholder="Number of adults" required class="input-box">
+                <input type="number" name="kids" placeholder="Number of children" class="input-box">
+                <span>Check-in - check-out</span>
+                <div class="date">
+                    <input type="date" id="start" name="start" min="2023-07-01" max="2023-7-31" placeholder="First day of your stay" class="input-box" />
+                    <input type="date" id="end" name="end" min="2023-07-01" max="2023-7-31" placeholder="Last day of your stay" class="input-box" />
+                </div>
+                <textarea name="message" placeholder="Message" class="input-box" rows="6"></textarea>
+                <button type="submit" id="kontakt-send">SEND</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <span>apartmani.cinkopan@gmail.com</span>
+        <span>Also available on booking.com</span>
+    </footer>
+</body>
+</html>

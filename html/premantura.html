@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartments Cinkopan</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../script/gallery.js" defer></script>
+    <script src="../script/nav.js" defer></script>
+
+    <!--Google font:-->    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body> 
+    <header>
+        <nav class="navbar">
+            <div class="nav-content">
+                <h1 id="logo">APARTMENTS CINKOPAN</h1>
+                
+                <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                
+                <div class="navbar-links">
+                    <ul class="nav-menu">
+                        <li><a href="#" class="nav-links">HOME</a></li>
+                        <!--<li><a href="contact.html" class="nav-links">CONTACT</a></li>-->
+                        <li id="app"><a href="#" class="nav-links">APARTMENTS</a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li><a href="arena.html">ARENA</a></li>
+                                    <li><a href="premantura.html">PREMANTURA</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!--<li><a href="premantura.html" class="nav-links">LANGUAGE</a></li>-->
+                        <li><a href="reserve.html" class="nav-links">RESERVE</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+        <nav id="mobile-nav">
+            <div class="mobile-links">
+                <ul class="nav-menu">
+                    <li><a href="#" class="nav-links">HOME</a></li>
+                    <li><a href="arena.html">ARENA</a></li>
+                    <li><a href="premantura.html">PREMANTURA</a></li>
+                    <!--<li><a href="contact.html" class="nav-links">CONTACT</a></li>-->
+                    <li><a href="reserve.html" class="nav-links">RESERVE</a></li>
+                </ul>
+            </div>
+        </nav>
+    <main>
+        <h2>Studio apartment in Premantura, Istria</h2>
+        <div class="gallery-wrap">
+        <section aria-label="Newest Photos">
+            <div class="gallery" data-gallery>
+                <button class="gallery-button prev" data-gallery-button="prev">&#171;</button>
+                <button class="gallery-button next" data-gallery-button="next">&#187;</button>
+                <ul data-slides>
+                    <li class="slide" data-active>
+                        <img src="../img/kamenjak.jpg">
+                    </li>
+                    <li class="slide">
+                        <img src="../img/premantura/building.jpg">
+                    </li>
+                    <li class="slide">
+                        <img src="../img/premantura/view.jpg">
+                    </li>
+                    <li class="slide">
+                        <img src="../img/premantura/balcony.jpg">
+                    </li>
+                    <li class="slide">
+                        <img src="../img/premantura/kitchen.jpg">
+                    </li>
+                    <li class="slide">
+                        <img src="../img/premantura/bed.jpg">
+                    </li>
+                    <li class="slide">
+                        <img src="../img/premantura/stairs.jpg">
+                    </li>
+                </ul>
+            </div>
+        </section>
+        </div>
+        <section class="text1"> 
+            <h3>Accommodation</h3>
+            <article>
+                <p>
+                    You will be staying in a charming, two-story building, where the
+                    newly renovated apartment awaits you on the second floor. The
+                    apartment spans 30 m<sup>2</sup> and comfortably accommodates two adults.
+                    It features a bathroom with a walk-in shower, a fully functional
+                    kitchen, a delightful balcony, and storage space. Inside,
+                    you'll find a flat-screen TV, air conditioning, and free Wi-Fi among other things.
+                    The apartment is positioned in a peaceful, peripheral neighborhood of a small tourist town, 
+                    surrounded by exceptional natural beauty.
+                    <br/><br/>
+                    Additionally, we offer the option to upgrade your experience by
+                    availing our garage, bikes, paddleboard or kayak for an extra
+                    fee.
+                </p>
+            </article>
+<hr>
+<!--
+        <div class="calendar">
+                <h3>Availability - July</h2>
+                <table>
+                <tr>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                    <th>Sunday</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="free">1</td>
+                    <td class="free">2</td>
+                </tr>
+                <tr>
+                    <td class="free">3</td>
+                    <td class="free">4</td>
+                    <td class="not-free">5</td>
+                    <td class="not-free">6</td>
+                    <td class="not-free">7</td>
+                    <td class="not-free">8</td>
+                    <td class="not-free">9</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                  </tr>
+                  <tr>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                  </tr>
+                  <tr>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                  </tr>
+                  <tr>
+                    <td>31</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+            </table>
+        </div>
+<hr>
+-->
+            <div class="included">
+                <h3>Included</h3>
+                    <div class="included-flex">
+                        <ul>
+                            <h3 class="lh">Kitchen</h3>
+                            <li><span>Oven</span></li>
+                            <li><span>Microwave</span></li>
+                            <li><span>Dishwasher</span></li>
+                            <li><span>Coffee maker</span></li>
+                            <li><span>Toaster</span></li>
+                            <li><span>Kettle</span></li>
+                        </ul>
+
+                        <ul>
+                            <h3 class="lh">Bedroom</h3>
+                            <li><span>Bed for two</span></li>
+                            <li><span>Bedsheets</span></li>
+                        </ul>
+                        <ul>
+                            <h3 class="lh" >Bathroom</h3>
+                            <li><span>Walk-in shower</span></li>
+                            <li><span>Washing machine</span></li>
+                            <li><span>Toilet paper</span></li>
+                            <li><span>Towels</span></li>
+                            <li><span>Hair dryer</span></li>
+                        </ul>
+
+                        <ul>
+                            <h3 class="lh">Media</h3>
+                            <li><span>Flat-screen TV</span></li>
+                            <li><span>Wi-Fi</span></li>
+                        </ul>
+                    </div>
+            </div>
+            
+<hr>
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2001.9069520763376!2d13.91068902904577!3d44.79866227642093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47632bb8dd40f47f%3A0x4cb445355a301e5a!2sSelo%20207!5e0!3m2!1sen!2shr!4v1689693436460!5m2!1sen!2shr"
+            width="1200" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+<hr>
+            <h3>Destinations</h3>
+            <h4>Rt Kamenjak</h4>
+            <article class="destination">
+                <p>
+                    Experience the wonders of Nature Park Rt Kamenjak, located a
+                    mere 300 m away from the apartment. Embrace the closeness to
+                    nature's beauty and the pristine waters of the Adriatic Sea.
+
+                    Discover the freedom of exploring the park on bicycles or by
+                    foot, with a free entry to the nature park's breathtaking
+                    landscapes. For those who prefer the convenience of a car, the
+                    entrance fee past the ramp is 15 € per day.
+
+                    Embark on a journey to uncover some of the most beautiful wild
+                    beaches, as you venture along the coast and encounter over 30
+                    serene bays.
+                    <br/> Inside the Nature Park, you can find a unique place
+                    called Safari Bar, where you can enjoy refreshing drinks and
+                    delicious grill while being captivated by a mesmerizing view.
+                    The bar's setting is an experience within itself, harmoniously
+                    blending with the breathtaking surroundings. We highly recommend
+                    visiting at least once if you find yourself in the area.
+                </p>
+                <img src="../img/kamenjak plaza.jpg">
+            </article>
+
+            <h4>Autocamp Stupice</h4>
+            <article class="destination">
+                <img src="../img/stupice.jpg">
+                <p>
+                    Between the protected landscape of Upper and Lower Kamenjak,
+                    next to Premantura village and only twelve kilometres for
+                    the urban centre of Pula, Arena Stupice Campsite found its
+                    place. In a safe embrace of an old pine forest and the
+                    endless blue of the Adriatic Sea, the campsite stands out
+                    with its small coves and rocky and pebbly beaches that
+                    gradually descend towards the sea. Guests can choose to camp
+                    in bright sunshine or mild shade, on pitches or in mobile
+                    homes. Within the camping ground, there is a windsurfing
+                    school, as well as the possibility to rent various sports
+                    equipment.
+                </p>
+            </article>
+
+        </section>
+
+    </main>
+    <footer>
+        <!--<span>apartmani.cinkopan@gmail.com</span>-->
+        <span>Also available on booking.com</span>
+        <span>Please note this website is work in progress therefore we apologize for any inconveniences</span>
+    </footer>
+</body>
+</html>
