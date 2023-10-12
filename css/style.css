@@ -305,19 +305,22 @@ header{
 
 /*|| FOOTER */
 footer{
-    height: 80px;
+    min-height: 80px;
     background-color: var(--darkgray);
     margin-top: 100px;
 }
 footer span{
     color: white;
     font-size: 14px;
+
+    max-width: 1300px;
+    padding: 0 50px;
 }
 footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 30px;
+    padding: 30px 0;
 }
 
 
@@ -403,8 +406,11 @@ footer{
     }
 
     /*|| Design*/
+    p{
+        font-size: 14px;
+    }
     .gallery{
-        height: 25vh;
+        height: 50vh;
     }
     #logo{
         font-size: 22px;
