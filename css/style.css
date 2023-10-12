@@ -220,11 +220,11 @@ header{
     display: none;
     flex-direction: column;
     justify-content: space-between;
-    width: 30px;
-    height: 21px;
+    width: 25px;
+    height: 20px;
 }
 .toggle-button .bar{
-    height: 3px;
+    height: 2px;
     width: 100%;
     background-color: var(--darkgray);
     border-radius: 10px;
@@ -329,12 +329,15 @@ footer{
     font-size: 16px;
 }
 .reserve-text p {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .reserve-text ul{
     list-style-position: inside;
     list-style-type: circle;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+}
+.reserve-text li{
+    padding-bottom: 10px;
 }
 #reserve-h2{
     margin-top: 120px;
@@ -397,6 +400,29 @@ footer{
     .mobile-links li:hover{
         background-color: var(--hover-color);
         transition: 0.5s ease-in;
+    }
+
+    /*|| Design*/
+    .gallery{
+        height: 25vh;
+    }
+    #logo{
+        font-size: 22px;
+    }
+    .included-flex{
+        flex-direction: column;
+    }
+    .included-flex ul{
+        margin-bottom: 25px;
+    }
+    .under{
+        margin: 0;
+    }
+    .included-flex ul:last-child {
+        margin-bottom: 0;
+    }
+    a {
+        word-break: break-all;
     }
 
     /*|| Destinations*/
