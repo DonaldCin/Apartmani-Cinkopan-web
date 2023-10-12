@@ -16,6 +16,7 @@
 
 body, html {
     height: 100%;
+    font-size: 16px;
 }
 main{
     max-width: 1300px;
@@ -31,14 +32,24 @@ hr{
     margin: 50px 0;
     color: var(--darkgray);
 }
-main h2{
-    font-size: 22px;
+.name{
     margin-top: 90px;
+}
+h2{
+    font-size: 1.7rem;
+}
+h3{
+    font-size: 1.4rem;
+}
+h4{
+    font-size: 1.2rem;
+}
+p{
+    font-size: 1rem;
 }
 .text1{
     margin-top: 30px;
     margin-bottom: 50px;
-    font-size: 16px;
     text-align: justify;
 }
 .text1 h3, .text1  h4{
@@ -100,9 +111,6 @@ table{
 .text1 li span{
     padding-left: 20px;
 }
-.lh{
-    font-size: 16px;
-}
 .under{
     margin-top: 20px;
 }
@@ -148,7 +156,7 @@ header{
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
-    font-size: 26px;
+    font-size: 1.4rem;
     color: var(--darkgray);
 }
 .navbar-links ul{
@@ -164,7 +172,7 @@ header{
     color: var(--darkgray);
     display: block;
     padding: 0px 20px; 
-    font-size: 16px;
+    font-size: 1rem;
     padding: 17px;
 }
 .navbar-links li:hover{
@@ -311,16 +319,19 @@ footer{
 }
 footer span{
     color: white;
-    font-size: 14px;
-
-    max-width: 1300px;
-    padding: 0 50px;
+    font-size: 1rem;
+    margin-bottom: 6px;
 }
-footer{
+footer span:last-child {
+    margin-bottom: 0;
+}
+.footer-wrap{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 30px 0;
+    padding: 30px 50px;
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
 
@@ -329,7 +340,6 @@ footer{
 .reserve-text{
     margin-top: 40px;
     margin-bottom: 50px;
-    font-size: 16px;
 }
 .reserve-text p {
     margin-bottom: 20px;
@@ -397,7 +407,7 @@ footer{
         color: var(--darkgray);
         display: block;
         padding: 0px 20px; 
-        font-size: 16px;
+        font-size: 1rem;
         padding: 17px;
     }
     .mobile-links li:hover{
@@ -406,14 +416,20 @@ footer{
     }
 
     /*|| Design*/
-    p{
+    html{
         font-size: 14px;
+    }
+    main{
+        padding: 0 30px;
+    }
+    .footer-wrap{
+        padding: 30px 30px;
+    }
+    .nav-content{
+        padding: 0 30px;
     }
     .gallery{
         height: 50vh;
-    }
-    #logo{
-        font-size: 22px;
     }
     .included-flex{
         flex-direction: column;
