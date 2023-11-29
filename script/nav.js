@@ -1,6 +1,17 @@
-const toggleButton = document.getElementsByClassName('toggle-button')[0]
-const navbarLinks = document.getElementsByClassName('mobile-links')[0]
+const navToggle = document.querySelector('.nav-toggle');
+const links = document.querySelector('.links');
 
-toggleButton.addEventListener('click', () => {
-    navbarLinks.classList.toggle('active')
-})
+navToggle.addEventListener('click', function(){
+    //console.log(links.classList);
+    links.classList.toggle("show-links");
+});
+
+
+//dropdown
+const apButton = document.querySelector('.ap-button'); 
+const dropdown = document.querySelector('.dropdown');
+
+apButton.addEventListener('click', function(){
+    event.preventDefault();
+    dropdown.classList.toggle("show-dropdown");
+});

@@ -1,4 +1,8 @@
-/* GENERAL */
+/*
+=============
+GENERAL
+=============
+*/
 :root{
     --lightgray: #f0f0f0;
     --darkgray: #212329;
@@ -25,9 +29,11 @@ main{
     min-height: 80vh;
 }
 
-
-
-/*|| DESIGN*/
+/*
+=============
+DESIGN
+=============
+*/
 hr{
     margin: 50px 0;
     color: var(--darkgray);
@@ -69,34 +75,62 @@ p, li{
     display: none;
 }
 
+/*
+=============
+CALENDAR
+=============
+*/
+.month{
+    display: none;
+}
+.active{
+    display: block;
+}
 
-
-/*|| CALENDAR*/
+.calendar-nav{
+    float: right;
+    justify-content: space-between;
+}
+.calendar-buttons button{
+    background-color: transparent;
+    border: 1px var(--darkgray) solid;
+    padding: 0.1rem 0.5rem;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+.calendar-buttons button:hover{
+    background-color: var(--hover-color);
+    transition: 0.3s all;
+}
 table, td, th{
     border: 1px solid var(--darkgray);
     border-collapse: collapse;
 }
 th, td{
     padding: 6px 10px;
-    width: 13%;
+    width: 14%;
 }
 table{
+    width: 100%;
+}
+.calendar{
     width: 80%;
     margin: 0 auto;
 }
-.calendar h3{
-    margin-left: 10%;
+.calendar td:empty{
+    background-color: transparent;
 }
-.free{
+.calendar td{
     background-color: rgb(212, 252, 212);
 }
 .not-free{
-    background-color: rgb(252, 193, 213);
+    background-color: rgb(252, 193, 213) !important;
 }
-
-
-
-/*|| INCLUDED*/
+/*
+=============
+INCLUDED
+=============
+*/
 .included-flex{
     display: flex;
     flex-wrap: wrap;
@@ -115,39 +149,78 @@ table{
     margin-top: 20px;
 }
 
-
-
-
-/*|| NAVIGATION*/
-header{
- position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  z-index: 3;
-  height: 60px;
+/*
+=============
+NAVIGATION
+=============
+*/
+@media screen and (min-width: 800px){
+    .nav-toggle{
+        display: none;
+    }
+    .nav-content{
+        display: flex;
+        justify-content: space-between;
+    }
+    .links-wrap ul{
+        display: flex;
+        height: auto;
+    }
+    .links-wrap li a{
+        padding: 1rem !important;
+    }
+    .links-wrap a:hover{
+        transition: 0.3s all;
+        color: skyblue;
+        margin: 0 !important;
+    }
+    .dropdown{
+        display: block;
+        position: absolute;
+        background-color: white;
+        top: 60px;
+    }
+    .dropdown a{
+        margin-left: 0 !important;
+    }
 }
+
+.links{
+    height: 0;
+    overflow: hidden;
+    transition: 0.3s all;
+  }
+  .show-links{
+    height: auto;
+  }
+
+.nav-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 .nav-content{
     width: 100%;
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 50px;
     height: 100%;
-
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     background-color: white;
     color: var(--darkgray);
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
-
-    display: flex;
-    align-items: center;
 }
-.navbar{
+nav{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 3;
     height: 60px;
+
+    height: auto;
     box-shadow:0 2px 6px rgba(0,0,0,.3);
     margin-bottom: 30px;
     background-color: white;
@@ -158,69 +231,65 @@ header{
     font-weight: 200;
     font-size: 1.4rem;
     color: var(--darkgray);
+    padding: 1rem 0;
 }
-.navbar-links ul{
-    margin: 0;
-    padding: 0;
-    display: flex;
+.links-wrap{
+    background-color: white;
 }
-.navbar-links li{
+.links-wrap li{
     list-style: none;
 }
-.navbar-links li a{
+.links-wrap li a{
     text-decoration: none;
     color: var(--darkgray);
     display: block;
-    padding: 0px 20px; 
     font-size: 1rem;
-    padding: 17px;
-}
-.navbar-links li:hover{
-    background-color: var(--hover-color);
-    transition: 0.5s ease-in;
-}
-.toggle-button{
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-}
-.toggle-button .bar{
-    height: 2px;
-    width: 100%;
-    background-color: var(--darkgray);
-    border-radius: 15px;
-}
+    padding: 1rem 0;
 
-/*Dropdown*/
+}
+.links-wrap a:hover{
+    transition: 0.3s all;
+    color: skyblue;
+    margin-left: 0.5rem;
+}
+.nav-toggle {
+    font-size: 1.5rem;
+    color: var(--darkgray);
+    background: transparent;
+    border-color: transparent;
+    transition: 0.3s all;
+    cursor: pointer;
+  }
+  .nav-toggle:hover {
+    color: var(--darkgray);
+    transform: rotate(90deg);
+  }
+/*Dropwown*/
 .dropdown{
-    display: block;
-    position: absolute;
-    opacity: 0;
+    display: none;
 }
-.dropdown ul{
+.show-dropdown{
     display: block;
 }
-.dropdown li{
-    background-color: white;
+.dropdown a{
+    margin-left: 1rem;
 }
-.dropdown li:hover{
-    background-color: var(--hover-color);
-    transition: 0.5s ease-in;
+.dropdown a:hover{
+    margin-left: 1.5rem;
 }
-#app:hover{
-    background-color: white;
-}
-#app:hover .dropdown{
-    opacity: 100%;
-    transition: 0.5s ease-in;
+.ap-button{
+    border: none;
+    background-color: transparent;
 }
 
 /*Bar*/
+.bar {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: var(--darkgray);
+    margin: 6px 0;
+  }
 .toggle-button{
     position: absolute;
     top: 20px;
@@ -238,10 +307,11 @@ header{
     border-radius: 10px;
 }
 
-.mobile-links{display: none;}
-
-
-/*|| GALLERY */
+/*
+=============
+GALLERY
+=============
+*/
 .gallery-wrap{
     max-width: 100%;
     margin: 0 auto;
@@ -309,9 +379,11 @@ header{
     right: 1rem;
 }
 
-
-
-/*|| FOOTER */
+/*
+=============
+FOOTER
+=============
+*/
 footer{
     min-height: 80px;
     background-color: var(--darkgray);
@@ -334,11 +406,13 @@ footer span:last-child {
     margin: 0 auto;
 }
 
-
-
-/*|| RESERVE */
+/*
+=============
+RESERVE
+=============
+*/
 .reserve-text{
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 50px;
 }
 .reserve-text p {
@@ -353,64 +427,12 @@ footer span:last-child {
     padding-bottom: 10px;
 }
 
-
-
-/*|| MOBILE*/
+/*
+=============
+MOBILE
+=============
+*/
 @media (max-width: 1400px){
-    .toggle-button{
-        display: flex;
-    }
-    .navbar-links{
-        display: none;
-    }
-
-    .mobile-nav{
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .mobile-links ul{
-        flex-direction: column;
-        width: 100%;
-        box-shadow: 0 2px 6px rgba(0,0,0,.3);
-    }
-
-    .mobile-links li {
-        text-align: center;
-    }
-    .header-img{
-        height: 200px;
-    }
-    .mobile-links.active{
-        position: fixed;
-        top: 60px;
-        z-index: 2;
-        background-color: white;
-        width: 100%;
-
-        display: flex;
-    }
-
-    /*|| Nav design*/
-    .mobile-links ul{
-        margin: 0;
-        padding: 0;
-        display: flex;
-    }
-    .mobile-links li{
-        list-style: none;
-    }
-    .mobile-links li a{
-        text-decoration: none;
-        color: var(--darkgray);
-        display: block;
-        padding: 0px 20px; 
-        font-size: 1rem;
-        padding: 17px;
-    }
-    .mobile-links li:hover{
-        background-color: var(--hover-color);
-        transition: 0.5s ease-in;
-    }
 
     /*|| Design*/
     html{

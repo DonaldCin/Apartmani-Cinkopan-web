@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <script src="../script/gallery.js" defer></script>
     <script src="../script/nav.js" defer></script>
+    <script src="../script/calendar.js" defer></script>
 
     <!--Google font:-->    
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,47 +15,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body> 
-    <header>
-        <nav class="navbar">
-            <div class="nav-content">
+    <nav>
+        <div class="nav-content">
+
+            <div class="nav-header">
                 <h1 id="logo">APARTMENTS CINKOPAN</h1>
-                
-                <a href="#" class="toggle-button">
+                <button class="nav-toggle">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
-                </a>
-                
-                <div class="navbar-links">
-                    <ul class="nav-menu">
-                        <li><a href="premantura.html" class="nav-links">HOME</a></li>
-                        <!--<li><a href="contact.html" class="nav-links">CONTACT</a></li>-->
-                        <li id="app"><a href="#" class="nav-links">APARTMENTS</a>
-                            <div class="dropdown">
-                                <ul>
-                                    <li><a href="arena.html">ARENA</a></li>
-                                    <li><a href="premantura.html">PREMANTURA</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <!--<li><a href="premantura.html" class="nav-links">LANGUAGE</a></li>-->
-                        <li><a href="reserve.html" class="nav-links">RESERVE</a></li>
-                    </ul>
-                </div>
+                </button>
             </div>
-        </nav>
-    </header>
-        <nav id="mobile-nav">
-            <div class="mobile-links">
-                <ul class="nav-menu">
-                    <li><a href="premantura.html" class="nav-links">HOME</a></li>
-                    <li><a href="arena.html">ARENA</a></li>
-                    <li><a href="premantura.html">PREMANTURA</a></li>
-                    <!--<li><a href="contact.html" class="nav-links">CONTACT</a></li>-->
+            
+            <div class="links-wrap">
+                <ul class="links">
+                    <li><a href="arena.html" class="nav-links">HOME</a></li>
+                    <li><button class="ap-button"><a href="#" class="nav-links">APARTMENTS</a></button>
+                        <div class="dropdown">
+                            <a href="arena.html">Arena</a>
+                            <a href="premantura.html">Premantura</a>
+                        </div>
+                    </li>    
                     <li><a href="reserve.html" class="nav-links">RESERVE</a></li>
+                    <li><a href="reserve.html" class="nav-links">LANGUAGE</a></li>
                 </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
     <main>
         <h3 class="name">Studio apartment in Premantura, Istria</h3>
         <div class="gallery-wrap">
@@ -107,77 +94,141 @@
                 </p>
             </article>
 <hr>
-<!--
-        <div class="calendar">
-                <h3>Availability - July</h2>
-                <table>
-                <tr>
-                    <th>Monday</th>
-                    <th>Tuesday</th>
-                    <th>Wednesday</th>
-                    <th>Thursday</th>
-                    <th>Friday</th>
-                    <th>Saturday</th>
-                    <th>Sunday</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td class="free">1</td>
-                    <td class="free">2</td>
-                </tr>
-                <tr>
-                    <td class="free">3</td>
-                    <td class="free">4</td>
-                    <td class="not-free">5</td>
-                    <td class="not-free">6</td>
-                    <td class="not-free">7</td>
-                    <td class="not-free">8</td>
-                    <td class="not-free">9</td>
-                </tr>
-                <tr>
-                    <td>10</td>
-                    <td>11</td>
-                    <td>12</td>
-                    <td>13</td>
-                    <td>14</td>
-                    <td>15</td>
-                    <td>16</td>
-                  </tr>
-                  <tr>
-                    <td>17</td>
-                    <td>18</td>
-                    <td>19</td>
-                    <td>20</td>
-                    <td>21</td>
-                    <td>22</td>
-                    <td>23</td>
-                  </tr>
-                  <tr>
-                    <td>24</td>
-                    <td>25</td>
-                    <td>26</td>
-                    <td>27</td>
-                    <td>28</td>
-                    <td>29</td>
-                    <td>30</td>
-                  </tr>
-                  <tr>
-                    <td>31</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-            </table>
+
+<div class="calendar">
+    <div class="calendar-nav">
+        
+        <div class="calendar-buttons">
+            <button class="calendar-button next">&#10094;</button>
+            <button class="calendar-button prev">&#10095;</button>
         </div>
+    </div>
+
+    <!--Months:-->
+
+    <!--May-->
+    <div class="month active">
+        <table>
+            <h3>May 2024</h2>
+            <tr>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td class="not-free">1</td>
+                <td class="not-free">2</td>
+                <td class="not-free">3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>7</td>
+                <td class="not-free">8</td>
+                <td class="not-free">9</td>
+                <td class="not-free">10</td>
+                <td class="not-free">11</td>
+                <td class="not-free">12</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+                <td>31</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <!--June-->
+    <div class="month">
+        <table>
+            <h3>June 2024</h2>
+            <tr>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td class="not-free">3</td>
+                <td class="not-free">4</td>
+                <td class="not-free">5</td>
+                <td class="not-free">6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+            </tr>
+        </table>
+    </div>
+</div>
+       
 <hr>
--->
             <div class="included">
                 <h3>Included</h3>
                     <div class="included-flex">
