@@ -132,6 +132,8 @@ nav{
     color: skyblue;
     margin-left: 0.5rem;
 }
+
+/*Hamburger*/
 .nav-toggle {
     font-size: 1.5rem;
     color: var(--darkgray);
@@ -140,10 +142,17 @@ nav{
     transition: 0.3s all;
     cursor: pointer;
   }
-  .nav-toggle:hover {
-    color: var(--darkgray);
+  .nav-toggle.rotate {
     transform: rotate(90deg);
   }
+  .bar {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: var(--darkgray);
+    margin: 6px 0;
+  }
+
 /*Dropwown*/
 .dropdown{
     display: none;
@@ -160,31 +169,6 @@ nav{
 .ap-button{
     border: none;
     background-color: transparent;
-}
-
-/*Bar*/
-.bar {
-    display: block;
-    width: 25px;
-    height: 2px;
-    background-color: var(--darkgray);
-    margin: 6px 0;
-  }
-.toggle-button{
-    position: absolute;
-    top: 20px;
-    right: 25px;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 25px;
-    height: 20px;
-}
-.toggle-button .bar{
-    height: 2px;
-    width: 100%;
-    background-color: var(--darkgray);
-    border-radius: 10px;
 }
 
 /*
