@@ -31,126 +31,6 @@ main{
 
 /*
 =============
-DESIGN
-=============
-*/
-hr{
-    margin: 50px 0;
-    color: var(--darkgray);
-}
-.name{
-    margin-top: 90px;
-}
-h2{
-    font-size: 1.7rem;
-}
-h3{
-    font-size: 1.4rem;
-}
-h4{
-    font-size: 1.2rem;
-}
-p, li{
-    font-size: 1rem;
-}
-.text1{
-    margin-top: 30px;
-    margin-bottom: 50px;
-    text-align: justify;
-}
-.text1 h3, .text1  h4{
-    margin-bottom: 15px;
-}
-.destination{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
-}
-.destination img, .destination p{
-    width: 48%;
-    height: auto;
-    object-fit: cover;
-}
-.mobile{
-    display: none;
-}
-
-/*
-=============
-CALENDAR
-=============
-*/
-.month{
-    display: none;
-}
-.active{
-    display: block;
-}
-
-.calendar-nav{
-    float: right;
-    justify-content: space-between;
-}
-.calendar-buttons button{
-    background-color: transparent;
-    border: 1px var(--darkgray) solid;
-    padding: 0.1rem 0.5rem;
-    font-size: 1.2rem;
-    margin-left: 1rem;
-}
-.calendar-buttons button:hover{
-    background-color: var(--hover-color);
-    transition: 0.3s all;
-}
-table, td, th{
-    border: 1px solid var(--darkgray);
-    border-collapse: collapse;
-}
-th, td{
-    padding: 6px 10px;
-    width: 14%;
-}
-table{
-    width: 100%;
-}
-.calendar{
-    width: 80%;
-    margin: 0 auto;
-}
-.calendar td:empty{
-    background-color: transparent;
-}
-.calendar td{
-    background-color: rgb(212, 252, 212);
-}
-.not-free{
-    background-color: rgb(252, 193, 213) !important;
-}
-/*
-=============
-INCLUDED
-=============
-*/
-.included-flex{
-    display: flex;
-    flex-wrap: wrap;
-}
-.included-flex ul{
-    padding-right: 60px;
-}
-.text1 ul{
-    list-style-position: inside;
-    list-style-type: "✓";
-}
-.text1 li span{
-    padding-left: 20px;
-}
-.under{
-    margin-top: 20px;
-}
-
-/*
-=============
 NAVIGATION
 =============
 */
@@ -305,6 +185,130 @@ nav{
     width: 100%;
     background-color: var(--darkgray);
     border-radius: 10px;
+}
+
+/*
+=============
+DESIGN
+=============
+*/
+hr{
+    margin: 50px 0;
+    color: var(--darkgray);
+}
+.name{
+    margin-top: 90px;
+}
+h2{
+    font-size: 1.7rem;
+}
+h3{
+    font-size: 1.4rem;
+}
+h4{
+    font-size: 1.2rem;
+}
+p, li{
+    font-size: 1rem;
+}
+.text1{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+.text1 h3, .text1  h4{
+    margin-bottom: 15px;
+}
+.destination{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.destination img, .destination p{
+    width: 48%;
+    height: auto;
+    object-fit: cover;
+}
+.mobile{
+    display: none;
+}
+
+/*
+=============
+CALENDAR
+=============
+*/
+.month{
+    display: none;
+}
+.active{
+    display: block;
+}
+
+.calendar-nav{
+    float: right;
+    justify-content: space-between;
+}
+.calendar-buttons button{
+    background-color: transparent;
+    border: 1px var(--darkgray) solid;
+    padding: 0.1rem 0.5rem;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+.calendar-buttons button:hover{
+    background-color: var(--darkgray);
+    color: white;
+    transition: 0.3S all;
+}
+table, td, th{
+    border: 1px solid var(--darkgray);
+    border-collapse: collapse;
+}
+th, td{
+    padding: 6px 10px;
+    width: 14%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+table{
+    width: 100%;
+}
+.calendar{
+    width: 80%;
+    margin: 0 auto;
+}
+.calendar td:empty{
+    background-color: transparent;
+}
+.calendar td{
+    background-color: rgb(212, 252, 212);
+}
+.not-free{
+    background-color: rgb(252, 193, 213) !important;
+}
+
+/*
+=============
+INCLUDED
+=============
+*/
+.included-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.included-flex ul{
+    padding-right: 60px;
+}
+.text1 ul{
+    list-style-position: inside;
+    list-style-type: "✓";
+}
+.text1 li span{
+    padding-left: 20px;
+}
+.under{
+    margin-top: 20px;
 }
 
 /*
@@ -465,6 +469,16 @@ MOBILE
     a {
         word-break: break-all;
     }
+
+    /*|| Calendar*/
+    .calendar{
+        width: 100%;
+    }
+    table {
+        max-width: 100%;
+        width: 100%;
+        table-layout: fixed; /* This property is crucial for the behavior you want */
+      }
 
     /*|| Destinations*/
     .destination{
