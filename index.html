@@ -8,6 +8,7 @@
     <script src="script/gallery.js" defer></script>
     <script src="script/nav.js" defer></script>
     <script src="script/calendar.js" defer></script>
+    <script src="script/reviews.js" defer></script>
 
     <!--Google font:-->    
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,22 +30,21 @@
             
             <div class="links-wrap">
                 <ul class="links">
-                    <li><a href="html/arena.html" class="nav-links">HOME</a></li>
+                    <li><a href="#" class="nav-links">HOME</a></li>
                     <li><button class="ap-button"><a href="#" class="nav-links">APARTMENTS</a></button>
                         <div class="dropdown">
                             <a href="html/arena.html">Arena</a>
                             <a href="html/premantura.html">Premantura</a>
                         </div>
                     </li>    
-                    <li><a href="html/reserve.html" class="nav-links">RESERVE</a></li>
-                    <li><a href="#" class="nav-links">LANGUAGE</a></li>
+                    <li><a href="html/contact.html" class="nav-links">CONTACT US</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <main>
-        <h3 class="name">Family apartment near Arena, Pula</h3>
+        <h3 class="name">Vacation apartments in Pula</h3>
         <div class="gallery-wrap">
         <section aria-label="Newest Photos">
             <div class="gallery" data-gallery>
@@ -52,7 +52,10 @@
                 <button class="gallery-button next" data-gallery-button="next">&#187;</button>
                 <ul data-slides>
                     <li class="slide" data-active>
-                        <img src="img/arena.jpg">
+                        <img src="img/Pula.jpg">
+                    </li>
+                    <li class="slide">
+                        <img src="img/kamenjak plaza 2.jpg">
                     </li>
                     <li class="slide">
                         <img src="img/arena/dnevni1jpg.jpg">
@@ -69,280 +72,68 @@
                     <li class="slide">
                         <img src="img/arena/velika sobajpg.jpg">
                     </li>
+                    <li class="slide">
+                        <img src="img/premantura/building.jpg">
+                    </li>
+                    <li class="slide">
+                        <img src="img/premantura/bed.jpg">
+                    </li>
+                    <li class="slide">
+                        <img src="img/premantura/balcony.jpg">
+                    </li>
+                    <li class="slide">
+                        <img src="img/premantura/stairs.jpg">
+                    </li>
                 </ul>
             </div>
         </section>
         </div>
         <section class="text1"> 
-            <h3>Accommodation</h3>
-            <article>
+            <h3>About us</h3>
+            <article class="about">
                 <p>
-                    You will be staying in a three-story building, where a newly
-                    renovated apartment awaits you on the top floor. The
-                    apartment spans 75 m<sup>2</sup> and can accommodate up to
-                    four adults. It features two bedrooms, a bathroom with a walk-in shower, a
-                    fully equipped kitchen, a spacious dining area, and a living
-                    room. Inside, you'll find amenities such as a flat-screen
-                    TV, air conditioning, and free Wi-Fi, among others. The
-                    apartment is located near the center of the citiy, offering
-                    a good view of one of Pula's most cherished monuments. The
-                    bus and train stations, as well as a supermarket and various
-                    other businesses, are all in close proximity. Additionally,
-                    many events take place during the summer months and are
-                    conveniently close to the apartment.
-                    <br/><br/>
-                    Additionally, we offer the option to upgrade your experience by
-                    availing our garage, bikes, paddleboard or kayak for an extra
-                    fee.
+                    We currently offer two vacation
+                    apartments, both situated in the scenic region of south
+                    Istria. Our commitment to quality is reflected in the recent
+                    renovation and thoughtful equipping of both accommodations.
+
+                    The first apartment, conveniently located near <a
+                    href="html/arena.html">Arena</a>, places you in the heart of
+                    Pula's vibrant center. With two spacious bedrooms, this
+                    well-connected accommodation offers a perfect blend of
+                    comfort and accessibility. Many points of interest are
+                    within walking distance, making it an excellent choice for
+                    those eager to explore the city's events and attractions.
+
+                    The second apartment, positioned in the serene neighborhood of
+                    <a href="html/premantura.html">Premantura</a>, provides a
+                    peaceful retreat in a small tourist town surrounded by
+                    breathtaking natural beauty. Ideal for those seeking
+                    some peace and silence, this apartment offers proximity to nature.
                 </p>
             </article>
 <hr>
 
-        <div class="calendar">
-            <div class="calendar-nav">
-                
-                <div class="calendar-buttons">
-                    <button class="calendar-button next">&#10094;</button>
-                    <button class="calendar-button prev">&#10095;</button>
-                </div>
+            <div class="reviews">
+                <h3>Reviews</h3>
+                <p>Here are some of the reviews our guests left on booking.com:</p>
+                    <article class="review">
+                        <h4 class="review-title" id="review-title">Comfortable</h4>
+                        <p id="review-text">Spacious rooms lovely high ceilings, view of the
+                        amphitheater from window, good location 10 mins from old
+                        town/ marina, close to bus station, close to
+                        supermarket/ convenience stores, well equipped kitchen
+                        for cooking. Apartment was on 4th floor- didn't bother
+                        us - but there is no lift.</p>
+
+                        <div class="button-container">
+                            <button class="prev-btn">&#10094;</button>
+                            <button class="rand-btn" id="random">Random</button>
+                            <button class="next-btn">&#10095;</button>
+                        </div>
+                    </article>
             </div>
-
-            <!--Months:-->
-
-            <!--May-->
-            <div class="month active">
-                <table>
-                    <h3>May 2024</h2>
-                    <tr>
-                        <th>Monday</th>
-                        <th>Tuesday</th>
-                        <th>Wednesday</th>
-                        <th>Thursday</th>
-                        <th>Friday</th>
-                        <th>Saturday</th>
-                        <th>Sunday</th>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td class="not-free">1</td>
-                        <td class="not-free">2</td>
-                        <td class="not-free">3</td>
-                        <td>4</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>7</td>
-                        <td class="not-free">8</td>
-                        <td class="not-free">9</td>
-                        <td class="not-free">10</td>
-                        <td class="not-free">11</td>
-                        <td class="not-free">12</td>
-                    </tr>
-                    <tr>
-                        <td>13</td>
-                        <td>14</td>
-                        <td>15</td>
-                        <td>16</td>
-                        <td>17</td>
-                        <td>18</td>
-                        <td>19</td>
-                    </tr>
-                    <tr>
-                        <td>20</td>
-                        <td>21</td>
-                        <td>22</td>
-                        <td>23</td>
-                        <td>24</td>
-                        <td>25</td>
-                        <td>26</td>
-                    </tr>
-                    <tr>
-                        <td>27</td>
-                        <td>28</td>
-                        <td>29</td>
-                        <td>30</td>
-                        <td>31</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </table>
-            </div>
-            <!--June-->
-            <div class="month">
-                <table>
-                    <h3>June 2024</h2>
-                    <tr>
-                        <th>Monday</th>
-                        <th>Tuesday</th>
-                        <th>Wednesday</th>
-                        <th>Thursday</th>
-                        <th>Friday</th>
-                        <th>Saturday</th>
-                        <th>Sunday</th>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>1</td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td class="not-free">3</td>
-                        <td class="not-free">4</td>
-                        <td class="not-free">5</td>
-                        <td class="not-free">6</td>
-                        <td>7</td>
-                        <td>8</td>
-                        <td>9</td>
-                    </tr>
-                    <tr>
-                        <td>10</td>
-                        <td>11</td>
-                        <td>12</td>
-                        <td>13</td>
-                        <td>14</td>
-                        <td>15</td>
-                        <td>16</td>
-                    </tr>
-                    <tr>
-                        <td>17</td>
-                        <td>18</td>
-                        <td>19</td>
-                        <td>20</td>
-                        <td>21</td>
-                        <td>22</td>
-                        <td>23</td>
-                    </tr>
-                    <tr>
-                        <td>24</td>
-                        <td>25</td>
-                        <td>26</td>
-                        <td>27</td>
-                        <td>28</td>
-                        <td>29</td>
-                        <td>30</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-
-<hr>
-            <div class="included">
-                <h3>Included</h3>
-                    <div class="included-flex">
-                        <ul>
-                            <h4 class="lh">Kitchen</h4>
-                            <li><span>Oven</span></li>
-                            <li><span>Microwave</span></li>
-                            <li><span>Dishwasher</span></li>
-                            <li><span>Coffee maker</span></li>
-                            <li><span>Toaster</span></li>
-                            <li><span>Kettle</span></li>
-                        </ul>
-
-                        <ul>
-                            <h4 class="lh">Bedroom</h4>
-                            <li><span>One bed for two</span></li>
-                            <li><span>Two single beds</span></li>
-                            <li><span>Sofa bed for two</span></li>
-                            <li><span>Bedsheets</span></li>
-                        </ul>
-                        <ul>
-                            <h4 class="lh" >Bathroom</h4>
-                            <li><span>Walk-in shower</span></li>
-                            <li><span>Washing machine</span></li>
-                            <li><span>Dryer</span></li>
-                            <li><span>Toilet paper</span></li>
-                            <li><span>Towels</span></li>
-                            <li><span>Hair dryer</span></li>
-                        </ul>
-
-                        <ul>
-                            <h4 class="lh">Media</h4>
-                            <li><span>Flat-screen TV</span></li>
-                            <li><span>Wi-Fi</span></li>
-                        </ul>
-                    </div>
-            </div>
-            
-<hr>
-            <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2827.28275382723!2d13.8480433766399!3d44.87689447243219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477cd2e7bbc5c781%3A0x4b1abb299031397c!2zVHLFocSHYW5za2EgdWwuIDQsIDUyMTAwLCBQdWxh!5e0!3m2!1sen!2shr!4v1696178741893!5m2!1sen!2shr"
-            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-<hr>
-            <h3>Destinations</h3>
-            <h4>Arena</h4>
-            <article class="destination">
-                <img src="img/arenafilm.jpg" class="mobile">
-                <p>
-                    The amphitheatre is within walking distance from your
-                    accommodation, and while you can enjoy a good view from the
-                    surrounding streets, a 10€ ticket will grant you entry
-                    inside this 2000-year-old monument. Over the years, numerous
-                    events and concerts have taken place here, featuring
-                    globally popular bands such as Arctic Monkeys, Imagine
-                    Dragons, Tame Impala, Foo Fighters, and many others. In
-                    July, the Pula Film Festival also takes place, and in
-                    addition to cinemas, film screenings are held in special
-                    locations such as the Arena and Brijuni Islands. If you are
-                    visiting during that time, we highly recommend checking out
-                    these events.   
-                    <br/><br/>
-                    In addition to the Arena, Pula offers countless other
-                    historic locations that are well worth visiting, including
-                    the Temple of Augustus, the Golden Gate, and Kaštel Castle.
-                </p>
-                <img src="img/arenafilm.jpg" class="desktop">
-            </article>
-
-            <h4>Beaches</h4>
-            <article class="destination">
-                <img src="img/verudela.jpg">
-                <p>
-                    Many would rank Pua's numerous beautiful bays among the most
-                    beautiful in Istria, and so you can find a number of
-                    incredibly spectacular bathing spots with breathtaking sea
-                    colors in the region. Magnificent pebble bays, hidden
-                    idyllic natural beaches, well-kept stone beaches, small
-                    sandy beaches and also quiet nudist bays, there is
-                    definitely something for everyone. The nearest one is
-                    Valkane beach which is 3km away, easily accessible by car or
-                    bus. Some of the other spots we would recommend checking out
-                    are Verudela, Stoja, Lungomare and Rt Kamenjak. 
-                </p>
-            </article>
-
-            <h4>Brijuni</h4>
-            <article class="destination">
-                <img src="img/brijuni_iz_zraka2.jpg" class="mobile">
-                <p>
-                    To add an extra layer of excitement to your vacation,
-                    consider a boat trip to the Brijuni National Park, which
-                    comprises fourteen small islands. If you prefer exploring
-                    the island at your own pace, you can rent a golf cart or a
-                    bicycle. There are numerous points of interest to explore,
-                    such as the Roman villa ruins in Verige Bay. Additionally,
-                    there are several other stop-off points, including small
-                    churches, a dinosaur fossil site, a museum, and even a golf
-                    course.
-                    <br/><br/> On the northern edge of Veliki Brijun, a unique
-                    Safari Park sprawls across 9 hectares, inhabited by a
-                    fascinating mix of autochthonous Istrian and exotic South
-                    American, African, and Asian fauna. Inhabitants of the
-                    Safari Park include the Indian elephant Lanka, llamas (the
-                    South American camels, which, according to native legend,
-                    were domesticated in the very beginnings of human
-                    existence), zebras, Indian sacred cows, and ostriches,
-                    creating a friendly and unique atmosphere.
-                </p>
-                <img src="img/brijuni_iz_zraka2.jpg" class="desktop">
-            </article>
+             
         </section>
 
        </main>

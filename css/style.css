@@ -369,6 +369,40 @@ GALLERY
 
 /*
 =============
+REVIEWS
+=============
+*/
+.review{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-top: 20px;
+}
+.button-container{
+    padding-top: 1rem;
+    margin: 0 auto;
+    width: fit-content;
+}
+.button-container button{
+    margin: 0 0.5rem;
+    border: 1px var(--darkgray) solid;
+    padding: 0.5rem;
+    background-color: transparent;
+    font-size: 1.2rem;
+    padding: 0.1rem 0.5rem;
+}
+#random{
+    font-size: 1rem;
+    padding: 0.3rem 0.5rem;
+}
+.button-container button:hover{
+    background-color: var(--darkgray);
+    color: white;
+    transition: 0.3s all;
+}
+
+
+/*
+=============
 FOOTER
 =============
 */
